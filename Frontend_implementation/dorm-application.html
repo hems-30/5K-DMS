@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <title>5K DMS | Dorm Application</title>
     <link rel="stylesheet" href="main.css">
-    <script defer src="navigation-guard.js"></script>
-    <script defer src="session-monitor.js"></script>
+    <script>
+        setInterval(() => {
+            if (typeof Auth !== 'undefined') {
+                Auth.validateSession();
+            }
+        }, 5 * 60 * 1000);
+    </script>
 </head>
 <body>
 
