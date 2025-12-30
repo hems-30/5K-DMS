@@ -255,7 +255,6 @@
                     return;
                 }
                 
-                try {
                     const formData = new FormData(form);
                     
                     formData.append('validation_timestamp', new Date().toISOString());
@@ -286,14 +285,6 @@
                             });
                         }
                     }
-                } catch (error) {
-                    console.error('Registration error:', error);
-                    showAlert('Network error. Please check your connection and try again.', 'error');
-                } finally {
-                    submitBtn.disabled = false;
-                    submitBtn.textContent = 'Register';
-                }
-            }
 
             function showAlert(message, type) {
                 const existingAlert = document.querySelector('.form-alert');
