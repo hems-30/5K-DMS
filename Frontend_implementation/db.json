@@ -1,0 +1,56 @@
+{
+  "adminRegistry": [
+    {
+      "id": "sysadmin",
+      "pass": "admin123",
+      "role": "SYSTEM",
+      "perms": [
+        "SYSTEM",
+        "HOME"
+      ]
+    },
+    {
+      "id": "7469",
+      "adminId": "dorm_01",
+      "name": "Nanat Abeshu",
+      "phone": "0924433238",
+      "pass": "nanat",
+      "role": "DORM",
+      "perms": [
+        "HOME",
+        "OVERVIEW"
+      ]
+    },
+    {
+      "id": "3160",
+      "adminId": "dorm_02",
+      "name": "Nanat Abeshu",
+      "phone": "",
+      "pass": "nanat",
+      "role": "DORM",
+      "perms": [
+        "HOME",
+        "VERIFY"
+      ]
+    }
+  ],
+  "publicAnnouncements": [
+    {
+      "id": "1991",
+      "text": "Now accepting applications for rural student dormitory registration for the academic year 2025-2026. Apply now to secure your spot!",
+      "date": "12/29/2025",
+      "type": "Update"
+      }
+    ],
+    
+  "phases": [
+    {
+      "id": "3098",
+      "type": "Rural Student Registration",
+      "start": "2025-12-29",
+      "end": "2025-12-31",
+      "status": "Active",
+      "createdAt": "2025-12-29T10:31:53.576Z"
+    }
+  ]
+}
